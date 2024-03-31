@@ -1,0 +1,15 @@
+.about-me * {
+  border: 1px solid;
+}
+
+.about-me {
+  background: white;
+  height: 900px;
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow-y: scroll;
+  min-height: 900px;
+
+}

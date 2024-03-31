@@ -1,0 +1,13 @@
+.home {
+  height: 900px;
+  width: 100%;
+  &__content{
+
+  }
+  &__image{
+    img{
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
