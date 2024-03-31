@@ -1,33 +1,16 @@
-.home * {
-  border: 1px solid;
-}
-
-.home {
-  background: darkgray;
-  height: 900px;
+.about-me {
   width: 100%;
-  max-width: 1200px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
+  padding-top: 50px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
-  &__content {
-    display: grid;
-    grid-template-rows: 5fr 2fr 1fr;
-  }
-  &__content-text {
-   font-size: 64px;
-    font-weight: 500;
-  }
-
-  &__image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    border-radius: 20px;
-    img {
-      border-radius: 20px;
-      height: 700px;
-    }
+  .background-text {
+    max-width: 600px;
+    padding-right: 60px;
+    font-size: 18px;
   }
 }

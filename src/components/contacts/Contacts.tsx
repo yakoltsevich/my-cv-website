@@ -1,25 +1,46 @@
 import React from 'react';
+import {
+    MY_EMAIL,
+    MY_GITHUB_LINK,
+    MY_LINKEDIN_LINK,
+    MY_TELEGRAM_LINK
+} from "../../shared/constants";
 import './Contacts.scss'
-import {MY_EXPERIENCE} from "../../shared/constants";
 
-export const Experience = () => {
+
+const TITLE = 'Let\'s keep in touch'
+export const Contacts = () => {
     return (
-        <div className="experience" id="experience">
-            <div className='section'>
-                <div>
-                    <h6> ― work experience</h6>
+        <div className="contacts" id="contacts">
+            <div className="contacts__content">
+
+                <div className="contacts__image">
+                    <img src={require('../../shared/images/medium/vitali_with_dog.jpg')} alt="vitali_with_dog"/>
                 </div>
-                <div>
-                    {MY_EXPERIENCE.map(el =>
-                        <div className='section-text'>
-                            <h5 className='section-text__title'>{el.title}</h5>
-                            <div className='section-text__period'>{el.company}&nbsp;/&nbsp;{el.period}</div>
-                            <div className='section-text__description'>{el.description}</div>
-                        </div>
-                    )}
+                <div className="contacts__contact-data">
+                    <div className="contacts__title">
+                        <span>{TITLE}</span>
+                    </div>
+                    <div className="contacts__data-row">
+                        Email:&nbsp;<a href={`mailto:${MY_EMAIL}`}>vitpol94@gmail.com</a>
+                    </div>
+                    <div className="contacts__data-row">
+                        Linkedin:&nbsp;<a target="_blank" rel="noreferrer"
+                                          href={MY_LINKEDIN_LINK}>linkedin.com/in/yakol</a>
+                    </div>
+                    <div className="contacts__data-row">
+                        Telegram:&nbsp;<a target="_blank" rel="noreferrer"
+                                          href={MY_TELEGRAM_LINK}>t.me/kind_grandfather</a>
+                    </div>
+                    <div className="contacts__data-row">
+                        GitHub:&nbsp;<a target="_blank" rel="noreferrer"
+                                        href={MY_GITHUB_LINK}>github.com/yakoltsevich</a>
+                    </div>
+                    <div className="contacts__data-row">
+                        Location: Gdansk, Poland (Polish residence permit)
+                    </div>
                 </div>
             </div>
-
         </div>
     );
 }

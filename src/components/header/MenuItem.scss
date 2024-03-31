@@ -1,0 +1,29 @@
+@import "../../shared/variables";
+
+.menu-item {
+  text-align: right;
+
+  a {
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 40px;
+    color: $nav-link-text-color;
+  }
+
+  &--big {
+    a {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+
+  &:hover {
+    a {
+      color: $nav-link-text-color-hover;
+      text-decoration: underline;
+      text-underline-offset: 7px;
+    }
+  }
+}
