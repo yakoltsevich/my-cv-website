@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import {MenuItem} from "./MenuItem";
-import {Menu} from "./Menu";
 import './Header.scss'
 
 export const Header = ({appRef}: any) => {
@@ -23,10 +22,9 @@ export const Header = ({appRef}: any) => {
             <div className="header__content">
                 <MenuItem label='home' isBig link='#home'/>
                 <div className='flex1'/>
-                <Menu/>
-                <MenuItem label='about me' forDesktop link='#about-me'/>
-                <MenuItem label='experience' forDesktop link='#experience'/>
-                <MenuItem label='contacts' forDesktop link='#contacts'/>
+                <MenuItem label='about me' link='#about-me'/>
+                <MenuItem label='experience' link='#experience'/>
+                <MenuItem label='contacts' link='#contacts'/>
             </div>
         </div>
     );

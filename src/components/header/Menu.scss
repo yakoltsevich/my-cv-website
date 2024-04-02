@@ -1,38 +1,7 @@
 @import "src/shared/variables";
 
-.menu {
-  position: relative;
-
-  &__icon-button {
-    svg {
-      fill: $nav-link-text-color;
-    }
-  }
-
-  &__list {
-    display: none;
-    position: absolute;
-    right: 0;
-    bottom: -90%;
-    background: white;
-    box-shadow: 0 6px 14px #0000001a;
-    padding: 10px 10px 10px 20px;
-
-    &--open {
-      display: block;
-      box-shadow: 0 6px 14px #0000001a;
-    }
-  }
-}
-
-@media screen and (max-width: $mobile_screen) {
-  .menu {
-    padding: 28px 14px;
-
-    &__content {
-      width: 100%;
-      max-width: $mobile_screen;
-      padding: 0 10px;
-    }
+#menu-button {
+  svg {
+    fill: $nav-link-text-color;
   }
 }

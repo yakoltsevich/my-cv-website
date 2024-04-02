@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from '@mui/material/Link';
 import './MenuItem.scss'
 
 type MenuItemProps = {
@@ -10,9 +11,9 @@ type MenuItemProps = {
 export const MenuItem = ({label, link, isBig, forDesktop}: MenuItemProps) => {
     return (
         <div className={`menu-item ${isBig ? 'menu-item--big' : ''} ${forDesktop ? 'menu-item--desktop' : ''}`}>
-            <a href={link}>
+            <Link href={link} underline='none'>
                 {label}
-            </a>
+            </Link>
         </div>
     );
 }
