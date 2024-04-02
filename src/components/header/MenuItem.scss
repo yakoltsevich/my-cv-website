@@ -1,4 +1,4 @@
-@import "../../shared/variables";
+@import "src/shared/variables";
 
 .menu-item {
   text-align: right;
@@ -25,5 +25,18 @@
       text-decoration: underline;
       text-underline-offset: 7px;
     }
+  }
+}
+
+@media screen and (max-width: $mobile_screen) {
+  .menu-item {
+    a {
+      margin-left: 0;
+      line-height: 1.6;
+    }
+  }
+
+  .menu-item--desktop {
+    display: none;
   }
 }

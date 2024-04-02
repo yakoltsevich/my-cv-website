@@ -1,4 +1,4 @@
-@import "../../shared/variables";
+@import "src/shared/variables";
 
 .contacts {
   min-height: 700px;
@@ -64,6 +64,39 @@
     img {
       border-radius: 20px;
       height: 500px;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile_screen) {
+  .contacts {
+    min-height: 900px;
+    padding: 50px 0 0 0;
+
+    &__content {
+      max-width: $mobile_screen;
+      display: grid;
+      grid-template-columns: 1fr;
+
+      & > :first-child {
+        order: 2;
+      }
+    }
+
+    &__title {
+      padding-bottom: 20px;
+      margin-top: 0;
+      font-size: 36px;
+    }
+
+    &__contact-data {
+      padding: 30px;
+    }
+
+    &__image {
+      img {
+        height: 450px;
+      }
     }
   }
 }

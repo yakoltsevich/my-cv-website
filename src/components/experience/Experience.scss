@@ -1,3 +1,5 @@
+@import "src/shared/variables";
+
 .experience {
   width: 100%;
   max-width: 1200px;
@@ -21,5 +23,18 @@
 
   &__period {
     margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: $mobile_screen) {
+  .experience {
+    max-width: $mobile_screen;
+    padding-top: 70px;
+  }
+
+  .section {
+    grid-template-columns: 1fr;
+    padding: 40px 30px;
+    width: 100vw;
   }
 }

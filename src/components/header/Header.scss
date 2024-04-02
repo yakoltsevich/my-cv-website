@@ -1,3 +1,5 @@
+@import "src/shared/variables";
+
 .header {
   width: 100%;
   position: sticky;
@@ -20,5 +22,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: $mobile_screen) {
+  .header {
+    padding: 0 10px;
+
+    &__content {
+      width: 100%;
+      max-width: $mobile_screen;
+      padding: 0 10px;
+    }
   }
 }

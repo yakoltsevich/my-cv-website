@@ -1,4 +1,4 @@
-@import "../../shared/variables";
+@import "src/shared/variables";
 
 .home {
   min-height: 700px;
@@ -70,6 +70,39 @@
     img {
       border-radius: 20px;
       height: 700px;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile_screen) {
+  .home {
+    width: 100%;
+    max-width: $mobile_screen;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+    padding: 0 30px;
+
+    & > :first-child {
+      order: 2;
+    }
+
+    &__content {
+      grid-template-rows: none;
+    }
+
+    &__content-text {
+      padding: 0;
+      font-size: 40px;
+    }
+
+    &__content-email {
+      margin: 30px 0 20px 0;
+    }
+
+    &__image {
+      img {
+        height: 450px;
+      }
     }
   }
 }

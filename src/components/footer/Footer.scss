@@ -1,4 +1,4 @@
-@import "../../shared/variables";
+@import "src/shared/variables";
 
 .footer {
   min-height: 200px;
@@ -14,5 +14,18 @@
     max-width: 1200px;
     font-style: italic;
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: $mobile_screen) {
+  .footer {
+    min-height: 300px;
+    width: 100vw;
+    padding: 0;
+
+    &__content {
+      margin: 30px;
+      max-width: $mobile_screen;
+    }
   }
 }
