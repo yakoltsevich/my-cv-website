@@ -28,17 +28,19 @@
     height: 50px;
     font-size: 16px;
     font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     &:hover {
       background: $button-email-bg-color-hover;
     }
 
     a {
-      color: white;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-decoration: none;
+      color: white;
     }
   }
 
