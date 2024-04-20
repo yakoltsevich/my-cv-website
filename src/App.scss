@@ -1,6 +1,8 @@
 @import "shared/variables";
 
 .App {
+  position: relative;
+  z-index: 1;
   color: $text-color1;
   background: $background-color;
   font-family: "Roboto-Regular", serif;
@@ -27,6 +29,17 @@ h6 {
   font-size: 15px;
   text-transform: uppercase;
   color: $text-color-h6;
+}
+
+.anchor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .flex1 {

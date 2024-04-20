@@ -43,9 +43,9 @@ export const Menu = () => {
                     horizontal: 'center',
                 }}
             >
-                <MenuItem label='about me' link='#about-me'/>
-                <MenuItem label='experience' link='#experience'/>
-                <MenuItem label='contacts' link='#contacts'/>
+                <MenuItem label='about me' anchor='#about-me'/>
+                <MenuItem label='experience' anchor='#experience'/>
+                <MenuItem label='contacts' anchor='#contacts'/>
             </MUIMenu>
         </div>
     );

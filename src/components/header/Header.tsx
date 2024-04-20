@@ -20,11 +20,11 @@ export const Header = ({appRef}: any) => {
     return (
         <div className={`header ${headerOn && 'header--active'}`}>
             <div className="header__content">
-                <MenuItem label='home' isBig link='#home'/>
+                <MenuItem appRef={appRef} label='home' isBig anchor='#home'/>
                 <div className='flex1'/>
-                <MenuItem label='about me' link='#about-me'/>
-                <MenuItem label='experience' link='#experience'/>
-                <MenuItem label='contacts' link='#contacts'/>
+                <MenuItem appRef={appRef} label='about me' anchor='#about-me'/>
+                <MenuItem appRef={appRef} label='experience' anchor='#experience'/>
+                <MenuItem appRef={appRef} label='contacts' anchor='#contacts'/>
             </div>
         </div>
     );

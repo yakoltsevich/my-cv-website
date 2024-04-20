@@ -5,7 +5,7 @@ import './Home.scss'
 const HOME_TEXT = 'Hi, I am Vitali, a software developer'
 export const Home = () => {
     return (
-        <div className="home" id="home">
+        <div className="home">
             <div className="home__content">
                 <div className="home__content-text">
                     <span>{HOME_TEXT}</span>

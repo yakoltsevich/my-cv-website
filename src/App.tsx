@@ -11,6 +11,7 @@ export const App = () => {
     const appRef = useRef(null)
     return (
         <div ref={appRef} className="App">
+            <div className='anchor'  id="home"/>
             <Header appRef={appRef}/>
             <Home/>
             <AboutMe/>
