@@ -39,6 +39,10 @@ export const Contacts = () => {
                     <div className="contacts__data-row">
                         Location: Gdansk, Poland (Polish residence permit)
                     </div>
+
+                    <div className="contacts__download-button">
+                        <a href="CV_Fullstack_Vitali_Yakaltsevich.pdf" download="CV_Fullstack_Vitali_Yakaltsevich.pdf">Download CV in PDF</a>
+                    </div>
                 </div>
             </div>
         </div>

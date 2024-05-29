@@ -35,6 +35,29 @@
     font-weight: 700;
   }
 
+  &__download-button {
+    background: $button-email-bg-color;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 10px;
+    margin: 30px 0 20px 0;
+
+    &:hover {
+      background: $button-email-bg-color-hover;
+    }
+
+    a {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: white;
+    }
+  }
+
   &__data-row {
     font-size: 18px;
     font-weight: 400;
@@ -70,7 +93,7 @@
 
 @media screen and (max-width: $mobile_screen) {
   .contacts {
-    min-height: 900px;
+    min-height: 1000px;
     padding: 0;
 
     &__content {

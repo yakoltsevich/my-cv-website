@@ -1,33 +1,27 @@
 export const MY_EXPERIENCE = [
     {
-        title: 'Front-end Developer',
+        title: 'FullStack Developer',
         period: 'start from March 2022',
         company: 'Smart-it',
-        description: 'In my role as a Front-end Developer, ' +
-            'I focus on enhancing the Zoom app by integrating ' +
-            'CRM functionalities seamlessly. This involves working ' +
-            'closely with the design team to create a user-friendly ' +
-            'layout that maximizes user engagement. I\'m responsible for ' +
-            'handling data requests to the back-end, ensuring smooth ' +
-            'communication between the front-end and back-end systems. ' +
-            'Additionally, I meticulously conduct various tests, including ' +
-            'unit and acceptance tests, to guarantee the quality and reliability ' +
-            'of our application. When issues arise, I dive into bug fixing, ' +
-            'troubleshooting, and implementing solutions efficiently.' +
-            ' My skillset includes expertise in CSS3, HTML5, React, SCSS, Git, ' +
-            'TypeScript, Redux, and Selenium, enabling me to tackle challenges' +
-            ' effectively and contribute to the continuous improvement of the Zoom app.'
+        description: 'I have implemented CRM integration within the Zoom application environment,' +
+            ' crafted intricate application layouts with precision and attention to detail,' +
+            ' and developed a proxy server to handle data requests and their redirection.' +
+            ' Additionally, I designed, developed, and maintained a relational database system' +
+            ' for data storage, retrieval, and manipulation. I created a REST API and utilized' +
+            ' Swagger for its documentation, built web services and APIs to enable seamless' +
+            ' communication between the front-end and back-end components, implemented comprehensive' +
+            ' testing protocols including Unit and acceptance testing methodologies,' +
+            ' and diligently resolved any identified bugs to maintain seamless user experiences.'
     },
     {
-        title: 'FullStack Developer',
+        title: 'Front-end Developer',
         period: 'June 2021 — March 2022',
         company: 'SolbegSoft',
-        description: 'As a FullStack Developer, I\'m responsible for translating ' +
-            'design documentation into application layouts and developing proxy' +
-            ' servers using Nest.js. I handle data requests to external APIs like' +
-            ' Zendesk through these servers and address bug fixes as needed. Proficient ' +
-            'in CSS3, HTML5, React, SCSS, Git, Node.js, and Nest.js, I ensure smooth and' +
-            ' efficient application functionality.'
+        description: 'I designed the application layout in accordance with specified design documentation,' +
+            ' ensuring a cohesive and user-friendly interface. In addition, I formulated data requests' +
+            ' to the back-end system to maintain seamless functionality and generated data requests to' +
+            ' the Zendesk API for effective integration. Throughout the development process, I conducted' +
+            ' thorough bug fixing to ensure the application\'s performance remained smooth and reliable.'
     },
     {
         title: 'Front-end Developer',
